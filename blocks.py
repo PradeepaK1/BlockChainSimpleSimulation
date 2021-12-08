@@ -31,3 +31,22 @@ if (t1!='' and t2!='' and t3!='' and t4!=''):
     st.write("Block 1 hash:", block1.block_hash)
     st.write("Block 2 data:", block2.block_data)
     st.write("Block 2 hash:", block2.block_hash)
+t11='sun'
+t22='moon'
+t33='earth'
+t44='mars'
+block3 = GeekCoinBlock('firstblock', [t11, t22])
+block4 = GeekCoinBlock(block3.block_hash, [t33, t44])
+
+if(block1.block_data==block3.block_data):
+    st.write("Data Integrity Verified, Data Valid(Same as encoded data)")
+    st.write("Block 1 data:", block1.block_data)
+    st.write("Block 1 hash:", block1.block_hash)    
+    st.write("Block 3 data:", block3.block_data)
+    st.write("Block 3 hash:", block3.block_hash)
+else:
+    st.write("Data Integrity Not Verified, Data Invalid(Not same as encoded data)")
+    st.write("Block 2 data:", block2.block_data)
+    st.write("Block 2 hash:", block2.block_hash)    
+    st.write("Block 4 data:", block4.block_data)
+    st.write("Block 4 hash:", block4.block_hash)
