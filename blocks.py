@@ -17,7 +17,7 @@ class GeekCoinBlock:
 
 
 
-block1 = GeekCoinBlock('firstblock', [t3,t2])
+block1 = GeekCoinBlock('firstblock', [t1,t2])
 
 print(f"Block 1 data: {block1.block_data}")
 print(f"Block 1 hash: {block1.block_hash}")
